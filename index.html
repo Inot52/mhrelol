@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaHub | Resident Evil RP Loading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Фоновая музыка -->
+<!-- Фоновая музыка с предзагрузкой -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="rebg.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Слайдер фонов -->
+    <div class="bg-slider">
+        <div class="bg bg1 active" style="background-image: url('bg1.png');"></div>
+        <div class="bg bg2" style="background-image: url('bg2.png');"></div>
+    </div>
+
+    <!-- Основной интерфейс -->
+    <div class="ui-container">
+
+        <!-- Верхний левый угол (Логотип и Название) -->
+        <div class="header">
+            <img src="mh_ico.png" alt="Icon" class="logo-icon">
+            <div class="server-title">
+               <span class="white-text">META</span><span class="red-text">HUB</span>
+               <span class="separator">|</span>
+               <span class="red-text">R</span><span class="white-text">ESIDENT </span><span class="red-text">E</span><span class="white-text">VIL RP</span>
+            </div>
+        </div>
+
+        <!-- Правый верхний угол (Блок онлайна) -->
+        <div class="stats-box">
+            <img src="user.png" alt="User">
+            <div class="online-count">24</div>
+            <div class="online-text">Выживших</div>
+        </div>
+
+        <!-- Центральная левая часть (Лор) -->
+        <div class="lore-section">
+            <h1 class="lore-title">Раккун-Сити, конец сентября 1998 года.</h1>
+            <p class="lore-text">
+                Город агонизирует. То, что начиналось как слухи о странных нападениях, обернулось кошмаром: вирус вышел из-под контроля, и улицы заполонили мертвецы. Полиция и спасатели уничтожены, связь оборвана, а зараженные продолжают прибывать — тихие, медленные, неумолимые. Небо затянуто дымом пожаров, воздух пропитан запахом гнили и страха. Город больше не принадлежит живым. Выжившие прячутся по домам, но стены не спасают от голода и отчаяния. Выбраться отсюда почти невозможно.
+            </p>
+        </div>
+
+        <!-- Нижний левый угол (Печатная машинка и загрузка) -->
+        <div class="loading-section">
+            <img src="pm.png" alt="Typewriter" class="typewriter-img">
+            <div class="loading-content">
+                <div class="loading-text" id="animated-text">Загрузка:</div>
+                <div class="loading-bar-container">
+                    <div class="loading-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
